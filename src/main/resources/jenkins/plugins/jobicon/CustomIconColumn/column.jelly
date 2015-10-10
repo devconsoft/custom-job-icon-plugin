@@ -17,8 +17,8 @@
 <j:jelly xmlns:j="jelly:core">
   <td>
     <j:if test="${job.getProperty('jenkins.plugins.jobicon.CustomIconProperty')!=null}">
-      <a href="${job.shortUrl}" title="${job.name}">
-        <img src="${job.shortUrl}customIcon/?size=${subIconSize}" class="icon${iconSize}" />
+      <a href="${jobBaseUrl}${job.shortUrl}" title="${job.name}">
+        <img src="${jobBaseUrl}${job.shortUrl}customIcon/?size=${subIconSize}" class="icon${iconSize}" />
       </a>
     </j:if>
   </td>
